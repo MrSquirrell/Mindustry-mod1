@@ -1,0 +1,46 @@
+{
+  "type": "PowerGenerator",
+  "name": "thermal-reactor",
+  "localizedName": "Thermal Reactor",
+  "description": "Generates enormous amounts of energy through an unstable catalytic reaction using slag. Highly flammable and prone to spontaneous ignition.",
+  "size": 3,
+  "health": 400,
+  "category": "power",
+
+  "flammability": 2.5,
+  "powerProduction": 20,
+  "hasLiquids": true,
+  "liquidCapacity": 240,
+  
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquidLight": true,
+        "lightOpacity": 0.8
+      }
+    ]
+  },
+
+  "consumes": {
+    "liquids": [
+      { "liquid": "slag", "amount": 0.8 }
+    ]
+  },
+
+  "requirements": [
+    { "item": "silicon", "amount": 300 },
+    { "item": "lead", "amount": 200 },
+    { "item": "metaglass", "amount": 100 },
+    { "item": "aerogel", "amount": 50 },
+    { "item": "thorium", "amount": 40 }
+  ],
+
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.40,
+  "updateEffect": "fire",
+  "updateEffectChance": 0.003
+}

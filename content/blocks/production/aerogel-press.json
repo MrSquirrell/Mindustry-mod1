@@ -1,0 +1,54 @@
+{
+  "name": "aerogel-press",
+  "localizedName": "Aerogel Press",
+  "type": "GenericCrafter",
+  "description": "Utilizes a complicated chemical process to synthesize aerogel from silicon and spore pods.",
+  "category": "crafting",
+  "size": 2,
+  "health": 200,
+  "itemCapacity": 10,
+  "hasItems": true,
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "c5d8FF",
+        "flameRadius": 2.0,
+        "flameLength": 3.0,
+        "stroke": 0.7
+      }
+    ]
+  },
+
+  "updateEffect": "steam",
+  "updateEffectChance": 0.04,
+  "craftEffect": "bubble",
+  "craftSound": "spark",
+
+
+
+  "requirements": [
+    { "item": "copper", "amount": 200 },
+    { "item": "silicon", "amount": 160 },
+    { "item": "titanium", "amount": 100 },
+    { "item": "metaglass", "amount": 40 },
+    { "item": "plastanium", "amount": 20 }
+  ],
+
+  "craftTime": 100,
+
+  "outputItem": "aerogel/1",
+
+  "consumes": {
+    "power":2,
+    "items": [
+      { "item": "silicon", "amount": 2 },
+      { "item": "spore-pod", "amount": 2 }
+    ]
+  }
+}

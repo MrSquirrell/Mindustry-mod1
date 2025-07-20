@@ -1,0 +1,9 @@
+{
+  "name": "aerogel",
+  "localizedName": "Aerogel",
+  "description": "A light weight and heat resistant material, necesary for high tier heat reliant infrastructure",
+  "color": "#d7dFF6",
+  "explosive": false,
+  "radioactive": false,
+  "cost": 1.0
+}
