@@ -4,5 +4,6 @@
   "author": "[magenta]franio",
   "description": "A mod that adds new content revolving around slag.",
   "minGameVersion": "146",
-  "version": "[red]1.9.1"
+  "version": "[red]1.9.1",
+  "java": "false"
 }

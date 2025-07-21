@@ -21,10 +21,10 @@
     ]
 },
 
-    "flammability": 100.0,
-    "explosiveness": 500.0,
-    "explosionRadius": 30,
-    "explosionDamage": 1500,
+    "explosiveness": 5.0,
+    "explosionRadius": 20,
+    "explosionDamage": 1200,
+
     "powerProduction": 20,
     "hasLiquids": true,
     "liquidCapacity": 240,
