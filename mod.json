@@ -1,8 +1,8 @@
 {
-  "displayName": "[red]Placki",
-  "name": "mod1",
+  "displayName": "[red]Thermal Revolution",
+  "name": "thermal-revolution",
   "author": "[magenta]franio",
-  "description": "placki",
+  "description": "A mod that adds new content revolving around slag.",
   "minGameVersion": "146",
   "version": "[red]1.9.1"
 }

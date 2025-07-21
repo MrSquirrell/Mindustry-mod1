@@ -1,0 +1,39 @@
+apply plugin: "java"
+
+// Ta nazwa zostanie użyta do nazwania pliku .jar
+// Zwykle jest to nazwa folderu głównego, np. "mindustry-mod1"
+def modName = rootProject.name
+
+ext {
+    mindustryVersion = "v146"
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://raw.githubusercontent.com/Zelaux/MindustryRepo/master/repository" }
+    maven { url 'https://www.jitpack.io' }
+}
+
+dependencies {
+    compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
+    compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
+}
+
+// To jest jedyne zadanie, którego potrzebujemy.
+// Nazywa się 'jar' i tworzy ostateczny plik .jar
+jar {
+    // Ustawiamy nazwę pliku wyjściowego, np. "mindustry-mod1.jar"
+    archiveFileName = modName + ".jar"
+
+    // Ta sekcja pakuje wszystkie potrzebne pliki z Twojego projektu.
+    from(projectDir) {
+        // Podajemy dokładnie, co ma zostać spakowane
+        include "mod.json"
+        include "content/**"
+        include "sprites/**"
+        // Poniższe linijki na przyszłość, jeśli dodasz dźwięki itp.
+        include "sounds/**"
+        include "music/**"
+        include "scripts/**"
+    }
+}
