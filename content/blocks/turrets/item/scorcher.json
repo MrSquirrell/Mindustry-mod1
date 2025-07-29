@@ -1,0 +1,162 @@
+{
+  "type": "ItemTurret",
+  "name": "scorcher",
+  "localizedName": "Scorcher",
+  "description": "An advanced turret, utilizes higly flammable materials to fire bursts of flames.",
+  "category": "turret",
+  "health": 200,
+  "size": 2,
+  "range": 100,
+  "inaccuracy": 2,
+  "reload": 10,
+  "recoil": 0,
+  "shootSound": "flame",
+
+  "shoot": {
+    "type": "ShootPattern",
+    "shotDelay": 180,
+    "shots": 1 },
+  
+  "ammoTypes": {
+    "coal": {
+      "lightRadius": 0.1,
+      "type": "BasicBulletType",
+      "collidesAir": false,
+      "lifeTime": 60,
+      "speed": 4.5,
+      "damage": 40,
+      "width": 0.1,
+      "height": 0.1,
+      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 15,
+            "offset": 15,
+            "lifetime": 50,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "length": 110,
+            "cone": -10,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "colorFrom": "#feb380",
+            "colorTo": "#ea8778"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "offset": 15,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "length": 100,
+            "lifetime": 50,
+            "colorFrom": "#feb380",
+            "colorTo": "#ea8778",
+            "cone": 10
+          }
+        ]
+      },
+      "smokeEffect": "none",
+      "lifetime": 40,
+      "despawnEffect": "none",
+      "hittable": false,
+      "reflectable": false,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 15,
+        "offset": 15,
+        "lifetime": 50,
+        "length": 120,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "#feb380",
+        "colorTo": "#ea8778"
+      },
+      "status": "burning",
+      "pierce": true,
+      "incendAmount": 4
+    },
+    "pyratite": {
+      "lightRadius": 0.1,
+      "type": "BasicBulletType",
+      "collidesAir": true,
+      "lifeTime": 70,
+      "speed": 5,
+      "damage": 100,
+      "width": 0.1,
+      "height": 0.1,
+      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 15,
+            "offset": 15,
+            "lifetime": 50,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "length": 110,
+            "cone": -10,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "colorFrom": "f15454",
+            "colorTo": "fc8d6c"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "offset": 15,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "length": 100,
+            "lifetime": 50,
+            "colorFrom": "f15454",
+            "colorTo": "fc8d6c",
+            "cone": 10
+          }
+        ]
+      },
+      "smokeEffect": "none",
+      "lifetime": 40,
+      "despawnEffect": "none",
+      "hittable": false,
+      "reflectable": false,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 15,
+        "offset": 15,
+        "lifetime": 50,
+        "length": 120,
+        "cone": -360,
+        "lenFrom": 5,
+        "lenTo": 0,
+        "colorFrom": "f15454",
+        "colorTo": "fc8d6c"
+      },
+      "status": "burning",
+      "pierce": true,
+      "incendAmount": 10
+    }
+  },
+
+  "requirements": [
+    "silicon/100",
+    "lead/80",
+    "plastanium/50",
+    "metaglass/50",
+    "aerogel/40",
+    "nihlon/10"
+  ]
+
+}

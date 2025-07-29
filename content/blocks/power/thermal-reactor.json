@@ -4,7 +4,7 @@
     "localizedName": "Thermal Reactor",
     "description": "Generates enormous amounts of energy through an unstable catalytic reaction using slag. Highly flammable and unstable, when destroyed the expoldes violently.",
     "size": 3,
-    "health": 200,
+    "health": 190,
     "category": "power",
 
 "drawer": {
@@ -22,7 +22,7 @@
 },
 
     "explosiveness": 5.0,
-    "explosionRadius": 20,
+    "explosionRadius": 10,
     "explosionDamage": 1200,
 
     "powerProduction": 20,
@@ -41,7 +41,8 @@
         { "item": "lead", "amount": 200 },
         { "item": "metaglass", "amount": 100 },
         { "item": "aerogel", "amount": 50 },
-        { "item": "thorium", "amount": 40 }
+        { "item": "thorium", "amount": 40 },
+        { "item": "nihlon", "amount": 25 }
 ],
 
     "ambientSound": "hum",

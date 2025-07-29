@@ -1,0 +1,92 @@
+{
+  "name": "nihlon-forge",
+  "localizedName": "Nihlon forge",
+  "type": "GenericCrafter",
+  "description": "Fuses thorium and plastanium utilizing enormous heat provided by slag.",
+  "category": "crafting",
+  "size": 2,
+  "health": 369,
+  "itemCapacity": 10,
+  "hasItems": true,
+
+"drawer": {
+  "type": "DrawMulti",
+  "drawers": [
+    {
+      "type": "DrawDefault"
+    },
+    {
+      "type": "DrawFlame",
+      "flameColor": "#ea8778",
+      "flameRadius": 2.0,
+      "flameLength": 3.0,
+      "stroke": 0.7
+    },
+    {
+      "type": "DrawGlowRegion",
+      "suffix": "-top",
+      "color": "#FFFFFF",
+      "alpha": 0.8,
+      "blending": "additive"
+    }
+  ]
+},
+
+"craftEffect": {
+  "type": "MultiEffect",
+  "effects": [
+    {
+      "type": "ParticleEffect",
+      "effect": "steam",
+      "x": 4,
+      "y": 4
+    },
+    {
+      "type": "ParticleEffect",
+      "effect": "steam",
+      "x": -4,
+      "y": 4
+    },
+    {
+      "type": "ParticleEffect",
+      "effect": "steam",
+      "x": 4,
+      "y": -4
+    },
+    {
+      "type": "ParticleEffect",
+      "effect": "steam",
+      "x": -4,
+      "y": -4
+    }
+  ]
+},
+
+  "updateEffect": "steam",
+  "updateEffectChance": 0.04,
+  "craftSound": "spark",
+
+
+
+  "requirements": [
+    { "item": "thorium", "amount": 300 },
+    { "item": "silicon", "amount": 120 },
+    { "item": "aerogel", "amount": 100 },
+    { "item": "plastanium", "amount": 20 }
+  ],
+
+  "craftTime": 150,
+
+  "outputItem": "nihlon/1",
+
+  "consumes": {
+    "power":4,
+    "items": [
+      { "item": "thorium", "amount": 2 },
+      { "item": "plastanium", "amount": 1 }
+    ],
+    "liquids": [
+        { "liquid": "slag", "amount": 0.4}
+    ]
+  }
+}

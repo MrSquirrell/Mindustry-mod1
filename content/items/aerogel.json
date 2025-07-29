@@ -1,7 +1,7 @@
 {
   "name": "aerogel",
   "localizedName": "Aerogel",
-  "description": "A light weight and heat resistant material, necesary for high tier heat reliant infrastructure",
+  "description": "A light weight and heat resistant material, necesary for basic heat reliant infrastructure",
   "color": "#d7dFF6",
   "explosive": false,
   "radioactive": false,

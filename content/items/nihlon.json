@@ -1,0 +1,9 @@
+{
+  "name": "nihlon",
+  "localizedName": "Nihlon",
+  "description": "A heavy, dense metal capable of withsanding immense heat, necesary for high tier heat reliant infrastructure.",
+  "color": "#565666",
+  "explosive": false,
+  "radioactive": false,
+  "cost": 1.0
+}
